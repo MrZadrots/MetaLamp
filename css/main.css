@@ -1,0 +1,66 @@
+.header {
+  height: 70px;
+  display: flex;
+  border: 3px solid #f1da36;
+}
+
+.header .logo {
+  padding-top: 15px;
+  padding-left: 140px;
+}
+
+.header .menu {
+  margin-left: 360px;
+  justify-content: space-between;
+}
+
+.header .menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu ul li {
+  margin-right: 20px;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.header .menu ul li a {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+.header .menu ul li a:active {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.header .header_buttons {
+  margin-top: 18px;
+  margin-right: 140px;
+}
+
+.buttonTransparent {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #FFFFFF;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border: 2px solid;
+  border-radius: 22px;
+  border-color: linear-gradient(to top, #fefcea, #f1da36);
+}
+
+.buttonGradient {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  background-color: #FFFFFF;
+  color: #BC9CFF;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  border: 2px solid;
+  border-radius: 22px;
+}
