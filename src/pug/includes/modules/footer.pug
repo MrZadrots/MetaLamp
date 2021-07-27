@@ -1,0 +1,30 @@
+footer
+  .logo
+    img(src='assets/img/Logo.svg')
+    p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+  .nav 
+    span Навигация
+    ul 
+      +menu('О нас','index.html')
+      +menu('Новости','#')
+      +menu('Служба поддержки','#')
+      +menu('Услуги','#')
+  .nav 
+    span О нас
+    ul 
+      +menu('О сервисе','index.html')
+      +menu('Наша команда','#')
+      +menu('Вакансии','#')
+      +menu('Инвесторы','#')
+  .nav 
+    span Служба поддержки
+    ul 
+      +menu('Соглашения','index.html')
+      +menu('Сообщества','#')
+      +menu('Связь с нами','#')
+  .sub_area 
+    span Подписка
+    p Получайте специальные предложения и новости сервиса
+    .emailArea
+      input(type='text' placeholder='E-mail' ).inputArea
+      input(type='submit' value="").inputButton

@@ -1,61 +1,91 @@
-.header{
-    height: 70px;
-    display: flex;
-    border:3px solid #f1da36;
-  
-    .logo{
-        padding-top: 15px;
-        padding-left: 140px;
-    }
-    .menu{
-        margin-left: 360px;
-        justify-content: space-between;
-        ul{
-            display: flex;
-            align-items: center;
-            li{
-                margin-right: 20px;
-                margin-top: 10px;
-                a{
-                    text-decoration: none;
-                    color: rgba(31, 32, 65, 0.5);
-                    font-size: 14px;
-                    font-family: 'Montserrat';
-                    
-                }
-                a:active{
-                    color: rgba(31, 32, 65, 0.75);
-                }
-                list-style: none;
-            }
-        }
-    }
-    .header_buttons{
-        margin-top: 18px;
-        margin-right: 140px;
-    }
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "modules/header";
+@import "modules/footer";
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+  }
 }
 
-.buttonTransparent{ 
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-weight: 700;
-    background-color: #FFFFFF;
-    color: #BC9CFF;
-    text-transform: uppercase;
-    padding: 9px 20px;
-    border: 2px solid;
-    border-radius: 22px;
-    border-color:linear-gradient(to top, #fefcea, #f1da36);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.buttonGradient{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    background-color: #FFFFFF;
-    color: #BC9CFF;
-    text-transform: uppercase;
-    padding: 9px 20px;
-    border: 2px solid;
-    border-radius: 22px;
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
+
+section, .section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 36px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 28px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: smPhoneWidth;
+  }
+}
+
+// Modules
+// @import "modules/my-module.scss";

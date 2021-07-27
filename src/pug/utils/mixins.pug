@@ -1,0 +1,15 @@
+mixin item(title, descr)
+  .item
+    h2.item-title= title
+    p.item-descr= descr
+
+mixin menu(name,href)
+  li
+    a(href=href).name= name
+    
+
+mixin menuDrop(name,href)
+  li
+    a(href=href).name= name
+      span.DropArrow
+        img(src='assets/img/dropDown.svg')

@@ -1,0 +1,14 @@
+header
+  .container-header
+    .logo
+    img(src='assets/img/Logo.svg' alt='Логотип') 
+    .menu
+      ul
+        +menu('О нас','index.html')
+        +menuDrop('Услуги','#')
+        +menu('Вакансии','#')
+        +menu('Новости','#')
+        +menuDrop('Соглашения','#')
+    .header-buttons
+      button.buttonTransparent= "Войти"
+      button.buttonGradient= "Зарегистрироваться"
