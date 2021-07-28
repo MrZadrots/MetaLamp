@@ -5,6 +5,7 @@
 @import "utils/reset";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/sigin";
 html {
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
@@ -86,6 +87,12 @@ section, .section {
     max-width: smPhoneWidth;
   }
 }
-
+h1{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 24px;
+  color:#1F2041;
+  font-style:bold;
+}
 // Modules
 // @import "modules/my-module.scss";

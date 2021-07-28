@@ -1,2 +1,12 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+@font-face{
+    font-family: Montserrat;
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.ttf)
+}
+@font-face{
+    font-family: Montserrat;
+    font-weight: 700;
+    src: url(../fonts/Montserrat-Bold.ttf)
+}
