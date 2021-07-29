@@ -1,0 +1,28 @@
+.containerSigIn  
+    h1 Регистрация 
+    .inputContainer
+        input(placeholder='Имя' type='text').inputArea
+        input(placeholder='Фамилия' type='text').inputArea
+    .inputCheckboxGender
+        .inputCheckboxGroup 
+            input(type='radio' value='male' name='m' text='Мужской')
+            p Мужчина
+        .inputCheckboxGroup 
+            input(type='radio' value='female' name='m') 
+            p Женщина
+    .inputContainer.inputDateOfBirth
+        h3(style='text-transform: uppercase') Дата рождения
+        input(placeholder='ДД.ММ.ГГГГ' type='text').inputArea
+    .inputContainer.inputSecretData
+        h3(style='text-transform: uppercase') Данные для входа в сервис
+        input(placeholder='Email' type='e-mail').inputArea
+        input(placeholder='Пароль' type="password").inputArea
+    .inputOffers
+        input(type='checkbox' id='toggle-button' name='offers').toggle-button
+        label(for='toggle-button' class='text') Получать специальные предложения
+    .inputContainer
+        button.MainButton Перейти к оплате
+            .arrow
+    .regisrationContainer 
+        p Уже есть аккаунт на Toxin
+        button.buttonTransparent.butonCreate Войти

@@ -1,16 +1,14 @@
 // header style
 .container-header{
+    padding-top: 15px;
     height: 70px;
     display: flex;
-    border:3px solid #f1da36;
-  
     .logo{
         padding-top: 15px;
         padding-left: 140px;
     }
     .menu{
-        background-color: url('../img/logo.png')!important;
-        margin-left: 300px;
+        margin-left: 294px;
         margin-top: 19px;
         justify-content: space-between;
         ul{
@@ -37,21 +35,6 @@
         margin-right: 120px;
     }
 }
-/*
-.buttonTransparent{ 
-    font-family: 'Montserrat';
-    margin-right: 20px;
-    margin-left: 20px;
-    font-size: 12px;
-    font-weight: 700;
-    background-color: #FFFFFF;
-    color: #BC9CFF;
-    text-transform: uppercase;
-    padding: 9px 20px;
-    border: 2px solid;
-    border-radius: 22px;
-}
-*/
 .buttonTransparent{ 
     font-family: 'Montserrat';
     margin-right: 20px;
