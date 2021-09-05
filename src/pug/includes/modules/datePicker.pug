@@ -10,28 +10,29 @@
    
    .selectBoxItemGuest
       h3 Гости
-      .dropDown
-         li.dropDownLi Сколько гостей
-         .dropDownContent
-            .dropDownItem
+      .select
+         .select__header
+            span.select__current Сколько гостей
+         .select__body
+            .select__item
                span Взрослые
                .dropDownItemCount
                   button.dropDownButton.dropDownMinus(type="submit") -
-                  span 0
+                  span.Count 0
                   button.dropDownButton.dropDownPlus(type="submit") +
-            .dropDownItem
+            .select__item 
                span Дети
                .dropDownItemCount
                   button.dropDownButton.dropDownMinus(type="submit") -
-                  span 0
+                  span.Count 0
                   button.dropDownButton.dropDownPlus(type="submit") +
-            .dropDownItem
+            .select__item
                span Младенцы
                .dropDownItemCount
                   button.dropDownButton.dropDownMinus(type="submit") -
-                  span 0
+                  span.Count 0
                   button.dropDownButton.dropDownPlus(type="submit") +
             .dropDownMainButtons
-               button(type='submit').dropDownMainButton очистить
-               button(type='submit').dropDownMainButton применить
-   +ButtonArrow('Подобрать номер')
+               button(type='submit').dropDownMainButton.ButtonClear очистить
+               button(type='submit').dropDownMainButton.ButtonApplay применить
+      +ButtonArrow('Подобрать номер')

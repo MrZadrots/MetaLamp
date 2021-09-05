@@ -21,68 +21,65 @@
             font-style: normal;
         }
     }
-    .dropDown{
-        width: 320px;
-        .dropDownLi{
-            padding: 13px 15px;
-            border: 1px solid;
-            border-color: rgba(31, 32, 65, 0.25);
-            border-radius: 4px;
-            color: rgba(31, 32, 65, 0.75);
-            font-size: 14px;
-            font-family: 'Montserrat';
-            font-weight: 400;
-            font-style: normal;
-        }
-        .dropDownLi:hover{
-            color:red;
-            .dropDownContent{
-                display: block;
+    .select {
+        width:320px;
+
+        .select__header {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            cursor: pointer;
+            display: flex;
+            border-radius: 2px;
+            .select__current {
+                padding: 12px 15px;
+                font-size: 14px;
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-style: normal;
+                color:rgba(31, 32, 65, 0.75);
             }
         }
-        .dropDownContent{
-            min-width: 320px;
-            margin-top:2px;
-            margin-left: -15px;
+        .select__body {
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-top: 0;
             display: none;
-            z-index: 1;
-            border: 1px solid;
-            border-color:rgba(31, 32, 65, 0.5);
-            padding: 15px 13px;
-            .dropDownItem{
+            left: 0;
+            right: 0;
+            top: 100%;
+            .select__item {
                 display: flex;
-                justify-content:space-between;
+                justify-content: space-between;
+                min-width: 320px;
+                padding: 12px 15px; 
+                text-align: center;
                 align-items: center;
-                margin-bottom: 22px;
-                color:rgba(31, 32, 65, 1);
-                text-transform: uppercase;
-                font-size: 12px;
-                font-family: 'Montserrat';
-                font-weight: 700;
-                font-style: normal;
-                .dropDownItemCount span{
-                    color:rgba(31, 32, 65, 1)
+                span{
+                    color:rgba(31, 32, 65, 1);
+                    text-transform: uppercase;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                    font-size: 12px;
                 }
-                .dropDownItemCount{
-                    .dropDownButton{
-                        padding: 4px 9px;
-                        width: 30px;
-                        height: 30px;
-                        border: 1px solid;
-                        color: rgba(31, 32, 65, 0.5);
-                        background-color: #fff;
-                        border-radius: 22px;
-                        margin-right: 10px;
-                        margin-left: 10px;
-                        font-style: normal;
-                        font-size: 18px;
-                        font-family: 'Montserrat';
-                        font-weight: 400;
-                    }
+                .dropDownButton{
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    width: 30px;
+                    height: 30px;
+                    font-size: 18px;
+                    color:rgba(31, 32, 65, 0.5);
+                    align-items: center;
+                    font-family: 'Montserrat';
+                    font-style: normal; 
+                    border-radius: 22px;
+                    background-color: #FFFFFF;
+                    margin-right: 5px;
+                    margin-left: 5px;
                 }
+                
             }
             .dropDownMainButtons{
                 display: flex;
+                margin-top: 20px;
+                margin-left: 12px;
+                margin-bottom: 13px;
                 justify-content: space-between;
                 .dropDownMainButton{
                     font-family: 'Montserrat';
@@ -95,5 +92,7 @@
             }
         }
     }
-
+    .select.is-active .select__body {
+        display: block;
+    }
 }
