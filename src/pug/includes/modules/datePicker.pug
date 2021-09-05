@@ -1,0 +1,37 @@
+.datePicker
+   h1 Найдем номера под ваши пожелания
+   .selectBox
+      .selectBoxItem
+         h3 Приpбытие 
+         input(placeholder="ДД.ММ.ГГГГ" type='date')
+      .selectBoxItem
+         h3 Выезд 
+         input(placeholder="ДД.ММ.ГГГГ" type='date')
+   
+   .selectBoxItemGuest
+      h3 Гости
+      .dropDown
+         li.dropDownLi Сколько гостей
+         .dropDownContent
+            .dropDownItem
+               span Взрослые
+               .dropDownItemCount
+                  button.dropDownButton.dropDownMinus(type="submit") -
+                  span 0
+                  button.dropDownButton.dropDownPlus(type="submit") +
+            .dropDownItem
+               span Дети
+               .dropDownItemCount
+                  button.dropDownButton.dropDownMinus(type="submit") -
+                  span 0
+                  button.dropDownButton.dropDownPlus(type="submit") +
+            .dropDownItem
+               span Младенцы
+               .dropDownItemCount
+                  button.dropDownButton.dropDownMinus(type="submit") -
+                  span 0
+                  button.dropDownButton.dropDownPlus(type="submit") +
+            .dropDownMainButtons
+               button(type='submit').dropDownMainButton очистить
+               button(type='submit').dropDownMainButton применить
+   +ButtonArrow('Подобрать номер')

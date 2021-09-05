@@ -20,3 +20,23 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+.MainButton {
+  margin-top: 20px;
+  padding: 14px 20px;
+  width: 384px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+.arrow{
+  height: 14px;
+  margin-top: -14px;
+  background-image: url(../img/arrow_forward.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center; 
+  }
+}
